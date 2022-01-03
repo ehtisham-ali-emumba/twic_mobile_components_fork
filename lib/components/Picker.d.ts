@@ -1,0 +1,23 @@
+import * as React from 'react';
+export declare const PickerIcon: (props: any) => JSX.Element;
+export declare type PickerProps = {
+    label: string;
+    placeholderText?: string;
+    value: string;
+    pickerMode?: 'flat' | 'outlined' | undefined;
+    onValueChange(value: any): void;
+    onDonePress?(): void;
+    onOpenHandler?(): void;
+    items: Array<any>;
+    errorMessage?: string;
+    customInputStyle?: object;
+    pickerIOSContainer?: object;
+    pickerAndroidContainer?: object;
+    customErrorContainerStyle?: object;
+    textInputContainerStyle?: object;
+    RenderCustomIcon?(): React.ReactElement;
+    testId?: string;
+    hidePlaceholder?: boolean;
+    textProps?: object;
+};
+export declare const Picker: (props: PickerProps) => JSX.Element;

@@ -1,0 +1,31 @@
+import * as React from 'react';
+import { InputFieldProps } from './InputField';
+export declare const DependentContainer: any;
+export declare type PickerProps = {
+    label: string;
+    placeholderText?: string;
+    value: string;
+    pickerMode?: 'flat' | 'outlined' | undefined;
+    onValueChange(value: any): void;
+    onDonePress?(): void;
+    onOpenHandler?(): void;
+    errorMessage?: string;
+    customInputStyle?: object;
+    pickerIOSContainer?: object;
+    pickerAndroidContainer?: object;
+    customErrorContainerStyle?: object;
+    RenderCustomIcon?(): React.ReactElement;
+    testId?: string;
+    hidePlaceholder?: boolean;
+};
+declare type Modify<T, R> = Omit<T, keyof R> & R;
+export declare type AutoCompleteFieldProps = Modify<InputFieldProps, {
+    data: string[];
+    onChangeHandler?: () => any;
+    value?: string;
+    seeAllCallBack?: (searchedString: string) => any;
+    seeAllText?: string;
+    clickableFieldCallBack?: (element: string) => any;
+}>;
+export declare const AutoCompleteText: (props: AutoCompleteFieldProps) => JSX.Element;
+export {};
