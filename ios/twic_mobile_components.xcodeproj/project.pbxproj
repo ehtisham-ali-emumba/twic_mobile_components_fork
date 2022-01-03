@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* twic_mobile_componentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* twic_mobile_componentsTests.m */; };
+		10D5378F2783580C009D5FE6 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D5378E2783580C009D5FE6 /* test.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -48,6 +49,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* twic_mobile_componentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twic_mobile_componentsTests.m; sourceTree = "<group>"; };
 		0E7A30944DE8A940F676A716 /* libPods-twic_mobile_components-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twic_mobile_components-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D5378E2783580C009D5FE6 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1161DF025BAB9DE8C3CFBE37 /* Pods-twic_mobile_components-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twic_mobile_components-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-twic_mobile_components-tvOSTests/Pods-twic_mobile_components-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* twic_mobile_components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twic_mobile_components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = twic_mobile_components/AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				10D5378E2783580C009D5FE6 /* test.swift */,
 			);
 			name = twic_mobile_components;
 			sourceTree = "<group>";
@@ -257,7 +260,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				955137AFA3BD7BF86B2F6F18 /* [CP] Embed Pods Frameworks */,
 				88DA691F999FF585E58EF9D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -280,7 +282,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C7DE0036A78159880C7BD070 /* [CP] Embed Pods Frameworks */,
 				30D311ED7456FF90B72640C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -344,7 +345,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -610,42 +611,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twic_mobile_components-twic_mobile_componentsTests/Pods-twic_mobile_components-twic_mobile_componentsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		955137AFA3BD7BF86B2F6F18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-twic_mobile_components-twic_mobile_componentsTests/Pods-twic_mobile_components-twic_mobile_componentsTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twic_mobile_components-twic_mobile_componentsTests/Pods-twic_mobile_components-twic_mobile_componentsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7DE0036A78159880C7BD070 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-twic_mobile_components/Pods-twic_mobile_components-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twic_mobile_components/Pods-twic_mobile_components-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ECCACEF74E413F445B6211E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				10D5378F2783580C009D5FE6 /* test.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,6 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D2B99DB48CA685813A0CEA /* Pods-twic_mobile_components-twic_mobile_componentsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -786,6 +753,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C90F4B50B9E0E52786EFBEB /* Pods-twic_mobile_components-twic_mobile_componentsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = twic_mobile_componentsTests/Info.plist;
@@ -988,6 +956,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1048,6 +1017,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

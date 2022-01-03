@@ -5,7 +5,7 @@ module.exports = {
   singleQuote: true,
   trailingComma: "all",
   endOfLine: "lf",
-  arrowParens: "always",
   printWidth: 250,
   useTabs: false,
+  arrowParens: 'avoid',
 };
