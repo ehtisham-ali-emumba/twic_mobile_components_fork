@@ -1,6 +1,6 @@
 {
   "name": "twic_mobile_components",
-  "version": "0.0.54",
+  "version": "0.0.55",
   "private": true,
   "main": "lib/index.js",
   "scripts": {
