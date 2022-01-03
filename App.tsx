@@ -17,7 +17,7 @@ const App = () => {
       <View style={{ padding: 20 }}>
         {/* <AutoCompleteText
           label="Category"
-          data={['asad', 'ahsan', 'waqar', 'ali', 'awais', 'ahmed', 'bilal', 'haseeb']}
+          data={['asad-ali', 'ahsan', 'waqar', 'ali', 'awais', 'ahmed', 'bilal', 'haseeb']}
           seeAllCallBack={(searchedString: string) => {
             console.log(searchedString);
           }}
